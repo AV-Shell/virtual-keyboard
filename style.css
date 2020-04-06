@@ -1,0 +1,107 @@
+@import url("./reset.css");
+
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.keyboard {
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    padding: 5px 0px;
+    background:purple;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    height:300px;
+
+
+}
+
+.keyboard__keys {
+    text-align: center;
+}
+
+.keyboard__key {
+    height: 50px;
+    width: 6%; 
+    max-width:50px;
+    margin:3px;
+    border-radius: 15px;
+    border:none;
+    background: rgba(178, 179, 139, 0.75);
+    color: rgb(0, 38, 255);
+    font-size: 2.5rem;
+    outline:none;
+    cursor: pointer;
+    display: inline-flex;
+    vertical-align: top;
+    padding: 0px;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    transition: 0.15s;
+    justify-content: center;
+    align-items: center;
+}   
+
+.keyboard__key:hover{
+    background: rgb(179, 166, 139);
+    box-shadow: 0px 0px 10px 7px rgba(255, 207, 140, 0.9);;
+}
+
+.keyboard__key_pressed{
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px 7px rgba(255, 207, 140, 0.9);;
+}
+
+.keyboard__key_wide{
+    width:12%;
+    max-width: 100px;
+}
+
+.keyboard__key_wider{
+    width:15%;
+    max-width: 125px;
+}
+
+.keyboard__key_the-widest{
+    width:18%;
+    max-width: 150px;
+}
+.keyboard__key_extra-wide{
+    width:36%;
+    max-width: 300px;
+}
+
+
+h1{
+    font-size: 3.2rem;
+    width: 100%;
+    text-align: center;
+    color:green;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 2.5rem;
+    width:100%;
+    padding:0 0 0 30px;
+    text-align:left ;
+    color:orangered;
+    margin-bottom: 10px;
+
+}
+textarea{
+    width: 100%;
+    height: auto;
+    display:static;
+    resize:none;
+    font-size:1.6rem;
+    color:rgb(1, 1, 83);
+}
+
+.keyboard {
+    visibility: initial;
+    /* visibility: hidden; */
+}
