@@ -6,21 +6,24 @@ html{
 }
 
 .keyboard {
-    position: fixed;
-    left:0;
-    bottom:0;
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    min-width: 900px;
     width:100%;
     padding: 5px 0px;
     background:purple;
     -webkit-user-select: none;
     -moz-user-select: none;
-    height:300px;
-
+    height:30%;
+    min-height: 310px;
 
 }
 
 .keyboard__keys {
     text-align: center;
+    min-width: 900px;
+    margin: 0px auto;
 }
 
 .keyboard__key {
@@ -54,8 +57,14 @@ html{
 .keyboard__key_pressed{
     border-radius: 5px;
     box-shadow: inset 0px 0px 10px 7px rgba(255, 207, 140, 0.9) ;
+    top:3px;
 }
 
+
+.keyboard__key_w{
+    width:9%;
+    max-width: 75px;
+}
 .keyboard__key_wide{
     width:12%;
     max-width: 100px;
@@ -71,10 +80,20 @@ html{
     max-width: 150px;
 }
 .keyboard__key_extra-wide{
-    width:36%;
-    max-width: 300px;
+    width:45%;
+    max-width: 375px;
 }
 
+.control-text-key{
+    font-weight: 900;
+}
+.control-text-key2{
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+.control-text-key3{
+    font-weight: 900;
+}
 
 h1{
     font-size: 3.2rem;
@@ -102,7 +121,7 @@ textarea{
     color:rgb(1, 1, 83);
 }
 
-.keyboard {
-    visibility: initial;
-    /* visibility: hidden; */
+.keyboard__key-ON{
+    color:#fff61fdb;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
